@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+#index {
+  background: url(/img/pro-typer.gif) no-repeat center center / cover;
+  text-align: center;
+  display: block;
+  margin-top: 100px;
+  color: white;
+  margin-bottom: -60px;
+}
+
+.welcome {
+  margin-bottom: -10px;
+}
+
+.welcome-note {
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.start {
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 16px;
+  animation: background-color 3s ease-in-out infinite;
+}
+
+@keyframes background-color {
+  0% {
+    background-color: gold;
+  }
+  50% {
+    background-color: rgb(182, 132, 5);
+  }
+  100% {
+    background-color: gold;
+  }
+}
+
+body {
+  background-color: rgb(84, 104, 11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.congratulation {
+  position: absolute;
+  top: 140px;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px 15px;
+  border: 0;
+  background-color: white;
+  color: rgb(106, 128, 30);
+  font-weight: bold;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.settings-btn {
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  z-index: 1;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  padding-right: 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: 600;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.settings.hide {
+  transform: translateY(-100%);
+}
+
+select {
+  width: 200px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+select:focus {
+  outline: 0;
+}
+
+.container {
+  background-color: rgb(106, 128, 30);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(49, 59, 12);
+  color: white;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  background-color: rgb(49, 59, 12);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0 0 40px;
+}
+
+h2 {
+  margin: 0;
+}
+
+input {
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 90%;
+  max-width: 600px;
+  padding: 12px 20px;
+  margin: 10px 0;
+}
+
+.score-container {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+}
+
+.time-container {
+  position: absolute;
+  top: 65px;
+  left: 20px;
+}
+
+.end-game-container {
+  background-color: inherit;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
