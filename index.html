@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-	<link rel="stylesheet" href="style.css">
-	
-	<title>Pro-Typer 🏆</title>
-</head>
-<body id="index">
-		<div class="intro">
-			<h2 class="welcome"> 🏆 Welcome to Pro-Typer 🏆</h2>
-			<p class="welcome-note">Talk is cheap. Show Us your typing skills</p>
-	</div>
-	<a href="home.html" class="start">Start</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
+    <title>Pro-Typer 🏆</title>
+  </head>
+  <body id="index">
+    <div class="intro">
+      <h2 class="welcome">🏆 Welcome to Pro-Typer 🏆</h2>
+      <p class="welcome-note">Talk is cheap. Show Us your typing skills</p>
+    </div>
+    <a href="home.html" class="start">Start</a>
 
-	<script>
-		var msg = new SpeechSynthesisUtterance();
-		var voices = window.speechSynthesis.getVoices();
-		msg.voice = voices[10]; 
-		msg.volume = 1; // From 0 to 1
-		msg.rate = 1; // From 0.1 to 10
-		msg.pitch = 0.2; // From 0 to 2
-		msg.text = "Welcome to Pro-Typer. Talk is cheap, Show Us your typing skills";
-		msg.lang = 'en';
-		speechSynthesis.speak(msg);
-		</script>
-</body>
+    <script>
+      var msg = new SpeechSynthesisUtterance();
+      var voices = window.speechSynthesis.getVoices();
+      msg.voice = voices[10];
+      msg.volume = 1; // From 0 to 1
+      msg.rate = 1; // From 0.1 to 10
+      msg.pitch = 1; // From 0 to 2
+      msg.text =
+        'Welcome to Pro-Typer. Talk is cheap, Show Us your typing skills';
+      msg.lang = 'en';
+      speechSynthesis.speak(msg);
+    </script>
+  </body>
 </html>
